@@ -64,6 +64,14 @@ function LaptopSection() {
         setLoading(false); 
     };
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 5000); 
+        return () => clearInterval(interval);
+    }, [currentSlide]); 
+
+
     return (
         <>
             {loading && <Loading />}
