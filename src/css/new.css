@@ -16,7 +16,6 @@ h1 span span {
 }
 
 /* glass */
-
 .glass {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(3px);
@@ -27,7 +26,6 @@ h1 span span {
 }
 
 /* button */
-
 .btn {
     border-radius: 5px;
     text-decoration: none;
@@ -36,20 +34,20 @@ h1 span span {
     padding: 10px 20px !important;
     position: relative;
     display: inline-block;
-    background-color: #e67e22;
-    box-shadow: 0px 5px 0px 0px #cd6509;
+    background-color: #3b82f6;
+    box-shadow: 0px 5px 0px 0px #2563eb; 
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: rgb(255, 57, 57);
-    box-shadow: 0px 5px 0px 0px red;
+    background-color: #6366f1;
+    box-shadow: 0px 5px 0px 0px #4f46e5; 
 }
 
 .btn:active {
     transform: translate(0px, 5px);
     -webkit-transform: translate(0px, 5px);
-    box-shadow: 0px 1px 0px 0px #cd6509;
+    box-shadow: 0px 1px 0px 0px #2563eb; 
 }
 
 /* circle button */
@@ -61,7 +59,6 @@ h1 span span {
 }
 
 /* glow */
-
 .full-screen {
     position: fixed;
     top: 0;
@@ -73,18 +70,18 @@ h1 span span {
 
 .glowing-box {
     position: absolute;
-    width: 0; /* Set width to 0 */
-    height: 0; /* Set height to 0 */
+    width: 0;
+    height: 0;
     border-radius: 50%;
-    background: transparent; /* Ensure the center is transparent */
-    box-shadow: 0 0 200px 50px rgba(255, 69, 0, 0.8), 0 0 400px 80px rgba(255, 69, 0, 0.6);
+    background: transparent;
+    box-shadow: 0 0 200px 50px rgba(59, 130, 246, 0.8),
+                0 0 400px 80px rgba(59, 130, 246, 0.6); 
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: box-shadow 0.1s ease-in-out;
 }
 
 /* laptop */
-
 .laptop img {
     width: 100%;
     height: auto;
