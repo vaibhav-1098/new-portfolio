@@ -48,3 +48,16 @@ body {
     background-color: black !important;
     overflow-x: hidden !important;
 }
+
+/* Only targets active links inside the header */
+header a.active {
+    color: #60a5fa !important;
+    text-decoration: underline;
+}
+
+/* Footer links will still get the .active class but won't get the underline */
+footer a.active {
+    text-decoration: none;
+    /* You can still keep the color change if you like */
+    color: #60a5fa !important;
+}

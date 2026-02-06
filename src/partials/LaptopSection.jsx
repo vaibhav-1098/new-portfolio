@@ -81,11 +81,11 @@ function LaptopSection() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 pt-32 pb-10 md:pt-40 md:pb-16">
                         <div className="text-center lg:text-left">
                             <h1
-                                className="h1 mb-4"
-                                style={{ fontFamily: "Comic Sans MS, sans-serif" }}
+                                className="mb-3 animated-header font-architects-daughter"
+                                // style={{ fontFamily: "Comic Sans MS, sans-serif" }}
                             >
-                                <span className="border-b-2 border-orange-500">
-                                    <span>.</span>Vaibhav Rana<span>..</span>
+                                <span className="border-orange-500">
+                                    Vaibhav Rana
                                 </span>
                             </h1>
                             <div className="text-xl text-gray-500 mb-8">

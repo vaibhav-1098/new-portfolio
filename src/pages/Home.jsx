@@ -14,23 +14,17 @@ import Stars from "../utils/Stars";
 
 function Home() {
     return (
-        <div className="flex flex-col min-h-screen overflow-hidden">
-            <Header />
-            <Stars id="stars" />
-            <GlowEffect />
 
-            <main className="grow">
-                <LaptopSection />
-                <Numbers />
-                <SoftwareSolutions />
-                <DigitalServices />
-                <RecentWork />
-                <TechStack />
-                <ContactForm />
-            </main>
+        <>
+            <LaptopSection />
+            <Numbers />
+            <SoftwareSolutions />
+            <DigitalServices />
+            <RecentWork />
+            <TechStack />
+            <ContactForm />
+        </>
 
-            <Footer />
-        </div>
     );
 }
 

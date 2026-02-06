@@ -1,6 +1,6 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 const Stars = (props) => {
     const [init, setInit] = useState(false);
@@ -113,4 +113,4 @@ const Stars = (props) => {
     return <Particles id={props.id} options={options} />;
 };
 
-export default Stars;
+export default React.memo(Stars);

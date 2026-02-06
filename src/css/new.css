@@ -35,19 +35,23 @@ h1 span span {
     position: relative;
     display: inline-block;
     background-color: #3b82f6;
-    box-shadow: 0px 5px 0px 0px #2563eb; 
+    box-shadow: 0px 5px 0px 0px #2563eb;
     cursor: pointer;
+}
+
+#round-btn {
+    border-radius: 200px !important;
 }
 
 .btn:hover {
     background-color: #6366f1;
-    box-shadow: 0px 5px 0px 0px #4f46e5; 
+    box-shadow: 0px 5px 0px 0px #4f46e5;
 }
 
 .btn:active {
     transform: translate(0px, 5px);
     -webkit-transform: translate(0px, 5px);
-    box-shadow: 0px 1px 0px 0px #2563eb; 
+    box-shadow: 0px 1px 0px 0px #2563eb;
 }
 
 /* circle button */
@@ -75,7 +79,7 @@ h1 span span {
     border-radius: 50%;
     background: transparent;
     box-shadow: 0 0 200px 50px rgba(59, 130, 246, 0.8),
-                0 0 400px 80px rgba(59, 130, 246, 0.6); 
+        0 0 400px 80px rgba(59, 130, 246, 0.6);
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: box-shadow 0.1s ease-in-out;

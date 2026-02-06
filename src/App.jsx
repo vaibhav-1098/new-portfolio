@@ -10,6 +10,14 @@ import "./css/marquee.css";
 import AOS from "aos";
 
 import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Pricing from "./pages/Pricing";
+import Contact from "./pages/Contact";
+import FAQs from "./pages/FAQs";
+import Header from "./partials/Header";
+import Footer from "./partials/Footer";
+import GlowEffect from "./utils/GlowEffect";
+import Stars from "./utils/Stars";
 
 function App() {
     const location = useLocation();
@@ -29,10 +37,24 @@ function App() {
 
     return (
         <>
-            <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="*" element={<Navigate to="/" />} />
-            </Routes>
+
+            <div className="flex flex-col min-h-screen overflow-hidden">
+                <Stars id="stars" />
+                {/* <GlowEffect /> */}
+                <main className="grow">
+                    <Header />
+                    <Routes>
+                        <Route exact path="/" element={<Home />} />
+                        <Route exact path="/blogs" element={<Blogs />} />
+                        <Route exact path="/pricing" element={<Pricing />} />
+                        <Route exact path="/contact" element={<Contact />} />
+                        <Route exact path="/faqs" element={<FAQs />} />
+                        <Route path="*" element={<Navigate to="/" />} />
+                    </Routes>
+                    <Footer />
+                </main>
+            </div>
+
         </>
     );
 }
